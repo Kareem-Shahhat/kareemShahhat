@@ -756,6 +756,7 @@ img{
     margin-bottom: 10px;
 }
 #footer .social-icon ul{
+    padding: 0;
     float: left;
     margin-bottom: 30px;
     height: 50px;
