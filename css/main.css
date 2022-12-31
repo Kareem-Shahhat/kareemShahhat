@@ -338,9 +338,9 @@ img{
 .cta{
     color:white;
     display:inline-block;
-    border: red 2px solid ;
+    /* border: red 2px solid ; */
     padding: 5px 30px;
-    background-color: #42000078;
+    background-color: #220000;
     font-size: 1.2rem;
     font-weight:599 ;
     text-transform: uppercase;
@@ -350,14 +350,9 @@ img{
     /* transition: 3s ease background-color; */
 }
 .cta:hover{
-	letter-spacing: 9px;
-    transition: .3s ease ;
+    transition: .2s ease ;
     box-shadow: inset 0 0 0 0 red;
     background-color:red;
-/* color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ff0000;
-    border-color: #ffffff; */
 }
 .cta:active{
     transition: .1s ease ;
@@ -365,18 +360,130 @@ img{
     color: black;
     font-weight: bold;
 }
+.cta{
+    /* width: fit-content; */
+    width: 250px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    border-radius: 4px;
+}
+.cta::before{
+    content: "";
+    position: absolute;
+    background-image: conic-gradient(transparent,transparent,transparent,rgb(255, 0, 51));
+    width: 200%;
+    height: 600%;
+    animation:anicta 4s linear infinite ;
+}
+.cta::after{
+    content: "";
+    position: absolute;
+    /* background-image: conic-gradient(transparent,transparent,transparent,rgb(209, 0, 146)); */
+    background-image: conic-gradient(transparent,transparent,transparent,rgb(255, 255, 255));
+    width: 200%;
+    height: 600%;
+    animation:anicta 4s linear infinite ;
+    animation-delay: -2s;
+}
+.cta span {
+    display: flex;
+    position: absolute;
+    inset: 4px;
+    background-color: #5c0000;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+.cta span:hover{
+    background-color: crimson;
+    letter-spacing: 5px;
+}
+@keyframes anicta {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* ----- */
+.img_boxani {
+    position: relative;
+    margin-right: 57px;
+    animation: efecimghero 0.8s linear;;
+}
+.img_boxani img{
+    width: 150px;
+}
+.img_boxani .rotateimg {
+    position: absolute;
+    top: -65%;
+    left: -86%;
+    width: 400px;
+    height: 400px;
+    /* animation: rotation_img 5s infinite linear; */
+    z-index: 4444444;
+}
+.rotin{
+    animation: rotation_img 5s infinite linear;
+}
+.rotout{
+    animation: rotationrev_img 8s infinite linear;
+}
+@keyframes efecimghero {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    70%{
+        transform: scale(0.7);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 /* ====== end slider =====*/
 
 /* Sevrises */
 #services{
     background-image: linear-gradient(180deg,#380000, transparent);
+    position: relative;
 }
 #services .contianer{
+    position: relative;
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
+    z-index: 6;
+}
+#services .img_boxani {
+    top: -155px;
+    z-index: 1;
+    position: absolute;
+    margin-right: 57px;
+    animation: efecimghero 2s linear;
+    opacity: 0.6;
+    left: -320px;
+}
+#services .img_boxani .rotateimg {
+    top: -65%;
+    left: -86%;
+    width: 600px;
+    height: 600px;
+}
+#services .rotout{
+    animation: rotationrev_img 10s infinite linear;
 }
 .service_top{
     max-width: 500px;
@@ -561,6 +668,7 @@ img{
 /* ===== about me ====== */
 #about{
     background-image: linear-gradient(180deg,#3a0000, transparent);
+    position: relative;
 }
 #about .about-contianer{
     flex-direction:column-reverse; /* <===== ???????? */
@@ -617,14 +725,52 @@ img{
     font-weight: 600;
     color: white;
 }
-#about .about-contianer .info a{
+#about .about-contianer .info a {
+    position: relative;
     padding: 10px 20px;
     font-size: 20px;
     font-weight: 600;
     color: white;
     margin-bottom: 30px;
+    overflow: hidden;
+    z-index: 1;
+}
+#about .about-contianer .info a:before {
+    transition: 0.3s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -103%;
+    width: 101%;
+    height: 100%;
+    background-image: linear-gradient(248deg, crimson, #8a132b);
+    z-index: -1;
+}
+#about .about-contianer .info .aa:hover {
+    background-color: transparent;
 }
 
+#about .about-contianer .info a:hover:before {
+    left: 0;
+}
+#about .img_boxani {
+    top: -226px;
+    z-index: 1;
+    position: absolute;
+    margin-right: 57px;
+    animation: efecimghero 2s linear;
+    opacity: 0.6;
+    right: 159px;
+}
+#about .img_boxani .rotateimg {
+    top: -65%;
+    left: -86%;
+    width: 600px;
+    height: 600px;
+}
+#about .rotout{
+    animation: rotationrev_img 10s infinite linear;
+}
 /* ====== end about me ======= */
 
 /* skills */
@@ -666,23 +812,6 @@ img{
     background-image: linear-gradient( 135deg, #440e0c 20%, #360940 100%);
     border: 1px solid rgba(170, 0, 0, 0.63);
 }
-/* .my_skills .progress .tichn div{
-    background-color: #F3F3F3;
-    height: 25px;
-    border-radius: 10px;
-    box-shadow: -1px 0px 12px 4px #0000004f;
-
-}
-.my_skills .progress .tichn div span{
-    background-color: crimson;
-    height: 100%;
-    display: block;
-    line-height: 25px;
-    color:white;
-    text-align: right;
-    font-weight: bold;
-    border-radius: 10px;
-} */
 
 .my_skills .progress .tichn div span {
     font-size: 12px;
@@ -712,6 +841,25 @@ img{
 /* ======= contact ======== */
 #contact{
     border-bottom: 1px solid crimson;
+    position: relative;
+}
+#contact .img_boxani {
+    top: -211px;
+    z-index: -1;
+    position: absolute;
+    margin-right: 57px;
+    animation: efecimghero 2s linear;
+    opacity: 1;
+    right: 222px;
+}
+#contact .img_boxani .rotateimg {
+    top: -65%;
+    left: -86%;
+    width: 600px;
+    height: 600px;
+}
+#contact .rotin{
+    animation: rotationrev_img 10s infinite linear;
 }
 #contact .contianer{
     flex-direction: column;
@@ -754,6 +902,12 @@ img{
 #contact .contact-info{
     text-shadow: none;
 }
+#contact p {
+    text-align: center;
+    color: lightgrey;
+    font-size: 20px;
+    font-weight: bold;
+}
 #contact .contact-info h1{
     font-size: 2rem;
     font-weight: 500;
@@ -776,6 +930,8 @@ img{
 #footer {
     background-image: url(../img/04.jpg);
     background-size: cover;
+    background-attachment: fixed;
+
 }
 #footer .contianer{
     min-height: 200px;
@@ -1022,6 +1178,25 @@ img{
 }
 /* animation text */
 
+/* animation img */
+@keyframes rotation_img {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+@keyframes rotationrev_img {
+    from {
+        transform: rotate(359deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+/* animation img */
+
 
 /* media query for small phone */
 @media only screen and (max-width: 768px){
@@ -1038,6 +1213,59 @@ img{
     #projects .all-project .project-info {
         background-color: transparent;
         background-image: none;
+    }
+    #slider .container {
+        flex-direction: column-reverse;
+       justify-content: space-evenly;
+    }
+    
+    .img_boxani .rotateimg {
+        top: -55%;
+        left: -72%;
+    }
+    .img_boxani img {
+        width: 83px;
+    }
+    #services {
+        overflow: hidden;
+    }
+    #contact {
+        overflow: hidden;
+    }
+    #about {
+        overflow: hidden;}
+    
+    .img_boxani {
+        margin-top: 67px;
+        margin-right: 0;
+    }
+    #slider .container {
+        flex-direction: column-reverse;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2px 3px;
+     
+    }
+    .cta {
+        width: 200px;
+    }
+    #services .img_boxani {
+        opacity: 0.4;
+    
+    }
+    #about .about-contianer {
+        z-index: 2;
+        position: relative;}
+    
+    #about .img_boxani {
+        opacity: 0.4;}
+
+    #footer,#contact{
+        overflow: hidden;
+    }
+    .img_boxani .rotateimg {
+        width: 200px;
+        height: 200px;
     }
 }
 @media only screen and (max-width: 380px) {
@@ -1083,6 +1311,18 @@ img{
         letter-spacing: 1rem;
         animation:  slider_p 1s ease forwards;
         font-weight: 600;
+    }
+    #services {
+        overflow: hidden;
+    }
+    #contact {
+        overflow: hidden;
+    }
+    #about {
+        overflow: hidden;
+    }
+    #slider .container {
+        justify-content: space-between;
     }
     /* End slider */
 
@@ -1171,8 +1411,9 @@ img{
         background-image: linear-gradient(-90deg, #380000, transparent);
     }
     #about .about-contianer{
-        flex-direction: row;
-
+        z-index: 111;
+    flex-direction: row;
+    position: relative;
     }
     #about .about-contianer .my-img{
         /* width: 35%;
@@ -1357,6 +1598,12 @@ img{
 	}
 }
 @media only screen and (min-width: 1200px){
+section{
+    overflow: hidden;
+}
+#slider .container {
+    justify-content: space-between;
+}
 .my_skills .progress {
     display: flex;
     flex-wrap: wrap;
