@@ -1,6 +1,0 @@
-    border-top: 2px solid crimson;
-    border-bottom: 2px solid crimson;
-    padding: 15px;
-    background-color: #ed143d3b;
-
-on jonur web // //
