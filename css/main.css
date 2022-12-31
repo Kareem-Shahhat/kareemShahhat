@@ -1267,6 +1267,12 @@ img{
         width: 200px;
         height: 200px;
     }
+#contact .contianer .contact-items {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
 @media only screen and (max-width: 380px) {
     .my_skills .container{
