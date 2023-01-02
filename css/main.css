@@ -265,6 +265,7 @@ img{
     background-position: top center;
     position: relative;
     z-index: 1;
+    background-attachment: fixed;
 }
 #slider .intro{
     line-height: 33px;
@@ -450,6 +451,23 @@ img{
     100%{
         transform: scale(1);
     }
+}
+.img_boxani:before {
+    content: '';
+    position: absolute;
+    top: -104px;
+    left: -124px;
+    width: 500%;
+    height: 222%;
+    background-color: transparent;
+    z-index: 11111145;
+}
+#rm1{
+    transition: 0.4s;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    transform: translateY(0);
 }
 /* ====== end slider =====*/
 
