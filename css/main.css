@@ -266,6 +266,7 @@ img{
     position: relative;
     z-index: 1;
     background-attachment: fixed;
+	transition: 0.3s;
 }
 #slider .intro{
     line-height: 33px;
