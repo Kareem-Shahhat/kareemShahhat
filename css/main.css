@@ -1743,6 +1743,12 @@ section{
     border: 1px solid #ed143d9c;
     /* box-shadow: 7px 7px 0 0 #470000; */
     box-shadow: 4px 4px 0 0 #686868;
+transition: 0.3s;
+}
+.skills_p:hover {
+    box-shadow: 0px 0px 0px 4px #93191994;
+    transition: ease .3s;
+    cursor: default;
 }
 .boxs_skil{
     box-shadow: inset 0 0 6px 0 black;
