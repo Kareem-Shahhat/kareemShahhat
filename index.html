@@ -17,9 +17,15 @@
     <!-- mian css -->
     <link rel="stylesheet" href="css/main.css" />
 
+    <link href="lib/Stylish-jQuery-Slideshow-with-Cool-Transitions-Skitter/dist/skitter.css" type="text/css" media="all"
+        rel="stylesheet" />
+    <!-- <link href="css/skitter.styles.css" type="text/css" media="all" rel="stylesheet" /> -->
+
     <!-- font lib -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b5a752535f.js" crossorigin="anonymous"></script>
+
+    <style> .skitter .info_slide_dots { backdrop-filter: blur(1px); bottom: 2px;  } </style>
 </head>
 
 <body>
@@ -94,7 +100,8 @@
             <div class="service_top wow bounceInUp" data-wow-delay="0.2s">
                 <h1 class="title wow rollIn">Serv<span>i</span>ces</h1>
                 <p>
-                    I'm a fullstack developer proficient in HTML, CSS, PHP ,MySQL and JavaScript, dedicated to crafting highly efficient and responsive websites for all devices.
+                    I'm a fullstack developer proficient in HTML, CSS, PHP ,MySQL and JavaScript, dedicated to crafting
+                    highly efficient and responsive websites for all devices.
                 </p>
             </div>
 
@@ -152,137 +159,357 @@
             <div class="project-header wow bounceInLeft" data-wow-delay="0.2s">
                 <h1 class="title">My <span>Projects</span></h1>
             </div>
-            <div class="rev_tab">
-                <div class="container_r">
+            <div class="rev_tab" style="width: 100%;">
+                <div class="container_r" style="width: 100%;">
                     <ul class="tabs_ul">
-                        <li class="active_tab_rev" data-cont=".tab_one"><span>Front end project (<p id="proj1"></p>)</span></li>
-                        <li data-cont=".tab_two"><span>Full stack project (<p id="proj2"></p>)</span></li>
+                        <li data-cont=".tab_one"><span>Front end project (<p id="proj1"></p>)</span></li>
+                        <li class="active_tab_rev" data-cont=".tab_two"><span>Full stack project (<p id="proj2"></p>
+                                )</span></li>
                     </ul>
-                    <div class="content_rev">
-
-                        <!-- ------- tab frontEnd -------- -->
-
-                        <div class="tab_one ">
-                            <div class="all-project wow fadeInUp">
-                                
-                                  <div class="project-items">
-                                    <div class="project-info">
-                                        <h1>E-commerce</h1>
-                                        <h3>Resto - full project</h3>
-                                        <p>php, MySQL, ajax, html, js, CSS, jQuery</p>
-                                        <a href="https://youtu.be/-wah3aOSDBk" class="web-btn">Open</a>
-                                    </div>
-                                    <div class="project-image">
-                                        <img src="img/34ؤ9c2945.jpg" alt="" />
-                                    </div>
-                                </div>
-                                
-                                <div class="project-items">
-                                    <div class="project-info">
-                                        <h1>E-commerce</h1>
-                                        <h3>Online Shop</h3>
-                                        <p>HTML, CSS, js ,(3)pages</p>
-                                        <a href="https://kareemshahhat.github.io/onlineShop/" class="web-btn">Open</a>
-                                    </div>
-                                    <div class="project-image">
-                                        <img src="img/pro37.png" alt="" />
-                                    </div>
-                                </div>
-    
-                                <div class="project-items">
-                                    <div class="project-info">
-                                        <h1>Portfolio Website</h1>
-                                        <h3>ElZero Site</h3>
-                                        <p>HTML, CSS, js ,Animation</p>
-                                        <a href="https://kareem-shahhat.github.io/ElZero/" class="web-btn">Open</a>
-                                    </div>
-                                    <div class="project-image">
-                                        <img src="img/pro33.png" alt="" />
-                                    </div>
-                                </div>
-    
-                                <div class="project-items">
-                                    <div class="project-info">
-                                        <h1>Business Website</h1>
-                                        <h3>Resto</h3>
-                                        <p>HTML, CSS, JS,bootstrb</p>
-                                        <a href="https://kareem-shahhat.github.io/Resto/" class="web-btn">Open</a>
-                                    </div>
-                                    <div class="project-image">
-                                        <img src="img/food site.png" alt="" />
-                                    </div>
-                                </div>
-                
-                                <div class="project-items">
-                                    <div class="project-info">
-                                        <h1>Business Website</h1>
-                                        <h3>Real Factory</h3>
-                                        <p>HTML, CSS, JS,bootstrb</p>
-                                        <a href="https://kareem-shahhat.github.io/RealFactory/" class="web-btn">Open</a>
-                                    </div>
-                                    <div class="project-image">
-                                        <img src="img/realfactory.png" alt="" />
-                                    </div>
-                                </div>
-                
-                                <div class="project-items">
-                                    <div class="project-info">
-                                        <h1>Business Website</h1>
-                                        <h3>Novena Template</h3>
-                                        <p>HTML, CSS, JS</p>
-                                        <a href="https://kareem-shahhat.github.io/Novena-/" class="web-btn">Open</a>
-                                    </div>
-                                    <div class="project-image">
-                                        <img src="img/pro11.png" alt="" />
-                                    </div>
-                                </div>
-                
-                                <div class="project-items">
-                                    <div class="project-info">
-                                        <h1>Landing Page</h1>
-                                        <h3>Modify</h3>
-                                        <p>HTML, CSS</p>
-                                        <a href="https://kareem-shahhat.github.io/Modify/" class="web-btn">Open</a>
-                                    </div>
-                                    <div class="project-image">
-                                        <img src="img/modify.png" alt="" />
-                                    </div>
-                                </div>
-                
-                                <div class="project-items">
-                                    <div class="project-info">
-                                        <h1>Business Website</h1>
-                                        <h3>Kasper Template</h3>
-                                        <p>HTML, CSS, JS, Sass</p>
-                                        <a href="https://kareem-shahhat.github.io/Kasper-/" class="web-btn">Open</a>
-                                    </div>
-                                    <div class="project-image">
-                                        <img src="img/pro 1.png" alt="" />
-                                    </div>
-                                </div>
-                
-                                <div class="project-items">
-                                    <div class="project-info">
-                                        <h1>Portfolio Website</h1>
-                                        <h3>News Papers Style Site</h3>
-                                        <p>HTML, CSS, Web Design</p>
-                                        <a href="https://kareem-shahhat.github.io/kareemShahhat/img/ful%20size%20pro%2055.png"
-                                            class="web-btn">Open</a>
-                                    </div>
-                                    <div class="project-image">
-                                        <img src="img/pro 55.png" alt="" />
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                    <div class="content_rev " style="width: 100%;">
 
                         <!-------- tap fullstack -------->
 
-                        <div class="tab_two">
-                            <div class="all-project fadeInUp">
-                                
-                                  <div class="project-items">
+                        <div class="tab_two full_stack_project">
+                            <div class="all-project fadeInUp" style="grid-template-columns: repeat(1, 98%);">
+
+
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>comprehensive web-based maintenance
+                                            management system</h1>
+                                        <h3>Egyptian Systems Company - MAS Group</h3>
+                                        <p>laravel10, mysql, ajax, jquery, js, css, bootstrap, system design</p>
+                                        <a href="https://hydrocomp-eg.com/" class="web-btn">Open</a>
+                                    </div>
+                                    <div class="project-image">
+
+                                        <div class="skitter skitter-large with-dots">
+                                            <ul>
+                                                <li>
+                                                    <a href="#cut1">
+                                                        <img src="img/New folder (2)/12.png" class="cut1" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBlocks">
+                                                        <img src="img/New folder (2)/13.png"
+                                                            class="swapBlocks" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack">
+                                                        <img src="img/New folder (2)/14.png"
+                                                            class="swapBarsBack" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack">
+                                                        <img src="img/New folder (2)/15.png"
+                                                            class="swapBarsBack" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack">
+                                                        <img src="img/New folder (2)/16.png"
+                                                            class="swapBarsBack" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack">
+                                                        <img src="img/New folder (2)/17.png"
+                                                            class="swapBarsBack" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack">
+                                                        <img src="img/New folder (2)/18.png"
+                                                            class="swapBarsBack" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack">
+                                                        <img src="img/New folder (2)/19.png"
+                                                            class="swapBarsBack" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack">
+                                                        <img src="img/New folder (2)/20.png"
+                                                            class="swapBarsBack" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>Hosting</h1>
+                                        <h3>Tapleto Host</h3>
+                                        <p>php, html, js, CSS, jQuery</p>
+                                        <a href="https://tapleto-host.net/" class="web-btn">Open</a>
+                                    </div>
+                                    <div class="project-image">
+
+                                        <div class="skitter skitter-large with-dots">
+                                            <ul>
+                                                <li>
+                                                    <a href="#cut2">
+                                                        <img src="img/New folder/11.png" class="cut2" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBlocks1">
+                                                        <img src="img/New folder/12.png"
+                                                            class="swapBlocks1" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack2">
+                                                        <img src="img/New folder/13.png"
+                                                            class="swapBarsBack3" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack3">
+                                                        <img src="img/New folder/14.png"
+                                                            class="swapBarsBack3" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack4">
+                                                        <img src="img/New folder/15.png"
+                                                            class="swapBarsBack4" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack5">
+                                                        <img src="img/New folder/16.png"
+                                                            class="swapBarsBack5" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack6">
+                                                        <img src="img/New folder/17.png"
+                                                            class="swapBarsBack6" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack7">
+                                                        <img src="img/New folder/18.png"
+                                                            class="swapBarsBack7" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack8">
+                                                        <img src="img/New folder/19.png"
+                                                            class="swapBarsBack8" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack9">
+                                                        <img src="img/New folder/12.png"
+                                                            class="swapBarsBack9" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>E-commerce</h1>
+                                        <h3>Storma Store</h3>
+                                        <p>Laravel 10, MySQL, ajax</p>
+                                        <!-- <a href="#" class="web-btn">Open</a> -->
+                                    </div>
+                                    <div class="project-image">
+
+                                        <div class="skitter skitter-large with-dots">
+                                            <ul>
+                                                <li>
+                                                    <a href="#cut3">
+                                                        <img src="img/New folder (4)/11.png" class="cut4" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBlocks">
+                                                        <img src="img/New folder (4)/12.png"
+                                                            class="swapBlocks" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack">
+                                                        <img src="img/New folder (4)/13.png"
+                                                            class="swapBarsBack" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack">
+                                                        <img src="img/New folder (4)/14.png"
+                                                            class="swapBarsBack" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#swapBarsBack">
+                                                        <img src="img/New folder (4)/15.png"
+                                                            class="swapBarsBack" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>Fiber optic representative site</h1>
+                                        <h3>Albraa</h3>
+                                        <p>php, MySQL, html, js, CSS, jQuery</p>
+                                        <a href="https://albaraasa.com/" class="web-btn">Open</a>
+                                    </div>
+                                    <div class="project-image">
+
+                                        <div class="skitter skitter-large with-dots">
+                                            <ul>
+                                                <li>
+                                                    <a href="#cut5">
+                                                        <img src="img/New folder (3)/2.png" class="cut5" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#cut6">
+                                                        <img src="img/New folder (3)/3.png" class="cut6" />
+                                                    </a>
+                                                    <div class="label_text">
+                                                        <p>
+                                                             
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="project-items">
                                     <div class="project-info">
                                         <h1>E-commerce</h1>
                                         <h3>Resto - full project</h3>
@@ -293,14 +520,15 @@
                                         <img src="img/34ؤ9c2945.jpg" alt="" />
                                     </div>
                                 </div>
-                                
+
                                 <div class="project-items" style="min-height:280px ;">
                                     <div class="project-info">
                                         <h1>Search</h1>
                                         <h3>D-search</h3>
                                         <span>This project has not been implemented before</span>
                                         <p>python, flask, js,</p>
-                                        <a href="https://kareemshahhat.github.io/D-search_demo/" class="web-btn">Demo</a>
+                                        <a href="https://kareemshahhat.github.io/D-search_demo/"
+                                            class="web-btn">Demo</a>
                                     </div>
                                     <div class="project-image">
                                         <img src="img/d-serch.png" alt="" />
@@ -320,6 +548,125 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- ------- tab frontEnd -------- -->
+
+                        <div class="tab_one ">
+                            <div class="all-project wow fadeInUp">
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>E-commerce</h1>
+                                        <h3>Resto - full project</h3>
+                                        <p>php, MySQL, ajax, html, js, CSS, jQuery</p>
+                                        <a href="https://youtu.be/-wah3aOSDBk" class="web-btn">Open</a>
+                                    </div>
+                                    <div class="project-image">
+                                        <img src="img/34ؤ9c2945.jpg" alt="" />
+                                    </div>
+                                </div>
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>E-commerce</h1>
+                                        <h3>Online Shop</h3>
+                                        <p>HTML, CSS, js ,(3)pages</p>
+                                        <a href="https://kareemshahhat.github.io/onlineShop/" class="web-btn">Open</a>
+                                    </div>
+                                    <div class="project-image">
+                                        <img src="img/pro37.png" alt="" />
+                                    </div>
+                                </div>
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>Portfolio Website</h1>
+                                        <h3>ElZero Site</h3>
+                                        <p>HTML, CSS, js ,Animation</p>
+                                        <a href="https://kareem-shahhat.github.io/ElZero/" class="web-btn">Open</a>
+                                    </div>
+                                    <div class="project-image">
+                                        <img src="img/pro33.png" alt="" />
+                                    </div>
+                                </div>
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>Business Website</h1>
+                                        <h3>Resto</h3>
+                                        <p>HTML, CSS, JS,bootstrb</p>
+                                        <a href="https://kareem-shahhat.github.io/Resto/" class="web-btn">Open</a>
+                                    </div>
+                                    <div class="project-image">
+                                        <img src="img/food site.png" alt="" />
+                                    </div>
+                                </div>
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>Business Website</h1>
+                                        <h3>Real Factory</h3>
+                                        <p>HTML, CSS, JS,bootstrb</p>
+                                        <a href="https://kareem-shahhat.github.io/RealFactory/" class="web-btn">Open</a>
+                                    </div>
+                                    <div class="project-image">
+                                        <img src="img/realfactory.png" alt="" />
+                                    </div>
+                                </div>
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>Business Website</h1>
+                                        <h3>Novena Template</h3>
+                                        <p>HTML, CSS, JS</p>
+                                        <a href="https://kareem-shahhat.github.io/Novena-/" class="web-btn">Open</a>
+                                    </div>
+                                    <div class="project-image">
+                                        <img src="img/pro11.png" alt="" />
+                                    </div>
+                                </div>
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>Landing Page</h1>
+                                        <h3>Modify</h3>
+                                        <p>HTML, CSS</p>
+                                        <a href="https://kareem-shahhat.github.io/Modify/" class="web-btn">Open</a>
+                                    </div>
+                                    <div class="project-image">
+                                        <img src="img/modify.png" alt="" />
+                                    </div>
+                                </div>
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>Business Website</h1>
+                                        <h3>Kasper Template</h3>
+                                        <p>HTML, CSS, JS, Sass</p>
+                                        <a href="https://kareem-shahhat.github.io/Kasper-/" class="web-btn">Open</a>
+                                    </div>
+                                    <div class="project-image">
+                                        <img src="img/pro 1.png" alt="" />
+                                    </div>
+                                </div>
+
+                                <div class="project-items">
+                                    <div class="project-info">
+                                        <h1>Portfolio Website</h1>
+                                        <h3>News Papers Style Site</h3>
+                                        <p>HTML, CSS, Web Design</p>
+                                        <a href="https://kareem-shahhat.github.io/kareemShahhat/img/ful%20size%20pro%2055.png"
+                                            class="web-btn">Open</a>
+                                    </div>
+                                    <div class="project-image">
+                                        <img src="img/pro 55.png" alt="" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
 
@@ -344,10 +691,13 @@
                 <h1 class="title">About <span>Me</span></h1>
                 <h3>Fullstack Web Developer</h3>
                 <p>
-                    I'M Kareem Al Shahhat, and I am a Fullstack developer. I am currently <span id="my_age">22</span> years old and embarked on my journey into the world of 
-                    programming in 2018, a decision I have since grown to deeply appreciate. I hold a degree from the Faculty of Information Systems, and I continue 
+                    I'M Kareem Al Shahhat, and I am a Fullstack developer. I am currently <span id="my_age">22</span>
+                    years old and embarked on my journey into the world of
+                    programming in 2018, a decision I have since grown to deeply appreciate. I hold a degree from the
+                    Faculty of Information Systems, and I continue
                     to expand my expertise in various programming languages, including Python, PHP, and JavaScript.
-                    My ultimate aspiration is to become a proficient full-stack web developer while continually striving to enhance my skills and ascend
+                    My ultimate aspiration is to become a proficient full-stack web developer while continually striving
+                    to enhance my skills and ascend
                     to the pinnacle of software engineering
                 </p>
                 <a href="#" class="aa">Download Resume</a>
@@ -369,7 +719,7 @@
                         <div class="skills_p">JavaScript</div>
                         <div class="skills_p">Bootstrap</div>
                         <div class="skills_p">jQuery</div>
-<!--                         <div class="skills_p">Vue.js</div> -->
+                        <!--                         <div class="skills_p">Vue.js</div> -->
                     </div>
                 </div>
 
@@ -387,9 +737,9 @@
                         <div class="skills_p">C#</div>
                         <div class="skills_p">Git & GitHub</div>
                         <div class="skills_p">SEO</div>
-                         <div class="skills_p">Problem Solving</div>
+                        <div class="skills_p">Problem Solving</div>
                     </div>
-                 
+
                 </div>
             </div>
         </div>
@@ -415,7 +765,7 @@
                     <div class="contact-info">
                         <h1>Phone</h1>
                         <h2>+20 1017 6488 07</h2>
-<!--                         <h2>+20 1011 2155 97</h2> -->
+                        <!--                         <h2>+20 1011 2155 97</h2> -->
                     </div>
                 </div>
                 <div class="items wow bounceInUp">
@@ -472,9 +822,38 @@
     </section>
     <!-- end footer -->
 
+
+    <!-- <div class="box_skitter box_skitter_large">
+            <ul>
+            <li><a href="#cube"><img src="lib/Stylish-jQuery-Slideshow-with-Cool-Transitions-Skitter/examples/images/example/001.jpg" class="cube" /></a>
+            <div class="label_text">
+            <p>cube</p>
+            </div>
+            </li>
+            <li><a href="#cubeRandom"><img src="lib/Stylish-jQuery-Slideshow-with-Cool-Transitions-Skitter/examples/images/example/002.jpg" class="cubeRandom" /></a>
+            <div class="label_text">
+            <p>cubeRandom</p>
+            </div>
+            </li>
+            <li><a href="#block"><img src="lib/Stylish-jQuery-Slideshow-with-Cool-Transitions-Skitter/examples/images/example/003.jpg" class="block" /></a>
+            <div class="label_text">
+            <p>block</p>
+            </div>
+            </li>
+            <li><a href="#cubeStop"><img src="lib/Stylish-jQuery-Slideshow-with-Cool-Transitions-Skitter/examples/images/example/004.jpg" class="cubeStop" /></a>
+            <div class="label_text">
+            <p>cubeStop</p>
+            </div>
+            </li>
+            </ul>
+            </div> -->
+
+
+
+
     <!-- copy rights -->
     <section class="copy">
-        <p>Copyright © <span id="yearc">2020</span>  Kareem. All rights reserved</p>
+        <p>Copyright © <span id="yearc">2020</span> Kareem. All rights reserved</p>
     </section>
     <!-- copy rights -->
 
@@ -483,23 +862,58 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> -->
     <script src="js/js.js"></script>
     <script src="lib/wow/wow.min.js"></script>
+
     <script>
         new WOW().init();
-       /* gsap.from("#rm12",{
-            scrollTrigger:{
-                scrub:true
-            },
-            y:0,
-        }) */
+        /* gsap.from("#rm12",{
+             scrollTrigger:{
+                 scrub:true
+             },
+             y:0,
+         }) */
         const currentDate = new Date();
         const currentYear = currentDate.getFullYear();
         var myage = document.getElementById('my_age');
         var yearc = document.getElementById('yearc');
-        
-        myage.innerHTML= parseInt(currentYear) - 2000
-        yearc.innerHTML= currentYear
-        
+
+        myage.innerHTML = parseInt(currentYear) - 2000
+        yearc.innerHTML = currentYear
+
+
+
+
+
     </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript"
+        src="lib/Stylish-jQuery-Slideshow-with-Cool-Transitions-Skitter/src/jquery.skitter.js"></script>
+    <script type="text/javascript" language="javascript"
+        src="lib/Stylish-jQuery-Slideshow-with-Cool-Transitions-Skitter/examples/js/jquery.easing.1.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.skitter-large').skitter({
+                theme: 'clean', // minimalist, round, clean, square
+                numbers_align: 'center', // Alignment of numbers/dots/thumbs
+                progressbar: true, // Displays progress bar
+                dots: true, // <a href="https://www.jqueryscript.net/tags.php?/Navigation/">Navigation</a> with dots
+                //preview: true, // Preview with dots
+                navigation: true,
+                responsive: {
+                    small: {
+                        animation: 'fade',
+                        max_width: 768
+                    },
+                    medium: {
+                        max_width: 1024
+                    }
+                }
+
+            });
+            //$('.skitter-large').skitter({fullscreen:true});
+        });
+    </script>
+
 </body>
 
 </html>
