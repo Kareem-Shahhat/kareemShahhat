@@ -1721,6 +1721,9 @@ section{
     margin: 0;
     background-color: transparent;
 	}
+    .full_stack_project .project-items{
+        min-height: 380px !important;
+    }
 }
 @media only screen and (max-width: 768px){
     #projects .all-project .project-items {
